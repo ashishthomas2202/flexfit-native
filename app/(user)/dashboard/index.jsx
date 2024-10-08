@@ -1,11 +1,10 @@
 import "expo-dev-client";
-import React, { useEffect, useState, useCallback } from "react";
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, View, ScrollView } from "react-native";
-import Stats from "./src/components/Stats";
-import RingProgress from "./src/components/RingProgress";
-import { useHealthData } from "./src/hooks/useHealthData";
-import { FitnessTracker } from "./src/components/FitnessTracker";
+import React from "react";
+import { StyleSheet, View, ScrollView, Text } from "react-native";
+import Stats from "../../../src/components/Stats";
+import { useHealthData } from "../../../src/hooks/useHealthData";
+import { FitnessTracker } from "../../../src/components/FitnessTracker";
+import { Link } from "expo-router";
 
 export default function App() {
   const { stepCount, distance, flightsClimbed, caloriesBurned } =

@@ -29,6 +29,7 @@
         <action android:name="android.intent.action.VIEW"/>
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:scheme="flexfit-native-scheme"/>
         <data android:scheme="com.ashishthomas2202.flexfitnative"/>
         <data android:scheme="exp+flexfit-native"/>
       </intent-filter>

@@ -2,6 +2,7 @@
   "expo": {
     "name": "flexfit-native",
     "slug": "flexfit-native",
+    "scheme": "flexfit-native-scheme",
     "version": "1.0.0",
     "orientation": "default",
     "icon": "./assets/icon.png",
@@ -25,7 +26,6 @@
         "android.permission.health.READ_DISTANCE",
         "android.permission.health.READ_FLOORS_CLIMBED"
       ],
-      // "minSdkVersion": 26,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -50,7 +50,8 @@
         }
       ],
       "expo-asset",
-      "expo-font"
+      "expo-font",
+      "expo-router"
     ]
   }
 }
