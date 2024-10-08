@@ -9,7 +9,7 @@ export default function RootLayout({ children }) {
         screenOptions={{
           statusBarColor: "#000",
           headerShown: false, // Customize if needed
-          backgroundColor: "#fff",
+          contentStyle: { backgroundColor: "#000" }, // Customize if needed
         }}
       >
         {children}

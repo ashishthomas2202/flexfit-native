@@ -21,7 +21,6 @@ export default function HomePage() {
     const animationTimer = setTimeout(() => {
       opacity.value = withTiming(0, { duration: 1000 });
     }, 4000);
-
     // Start the fade-out effect after 7 seconds, transition at 8 seconds
     const navigationTimer = setTimeout(() => {
       if (isFirstTime === true) {
@@ -32,7 +31,6 @@ export default function HomePage() {
         router.replace("/(user)/auth/signin");
       }
     }, 5000); // Wait for 7 seconds before starting fade-out
-
     return () => {
       clearTimeout(animationTimer);
       clearTimeout(navigationTimer);
@@ -65,6 +63,7 @@ export default function HomePage() {
         }}
         source="https://ik.imagekit.io/z1gqwes5lg/public/app/bg.png?updatedAt=1728346957158"
         contentFit="cover"
+        contentPosition="top"
         transition={1000}
       />
       {/* Overlay Image */}

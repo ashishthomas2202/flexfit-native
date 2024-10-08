@@ -12,16 +12,18 @@ export const AppProvider = ({ children }) => {
 
   // Check if the app is opened for the first time
   useEffect(() => {
-    const checkFirstTime = async () => {
-      const firstTime = await AsyncStorage.getItem("isFirstTime");
-      if (firstTime === null) {
-        setIsFirstTime(true);
-        await AsyncStorage.setItem("isFirstTime", "false");
-      } else {
-        setIsFirstTime(false);
-      }
-    };
-    checkFirstTime();
+    // const checkFirstTime = async () => {
+    //   const firstTime = await AsyncStorage.getItem("isFirstTime");
+    //   if (firstTime === null) {
+    //     setIsFirstTime(true);
+    //     await AsyncStorage.setItem("isFirstTime", "false");
+    //   } else {
+    //     setIsFirstTime(false);
+    //   }
+    // };
+    // checkFirstTime();
+
+    setIsFirstTime(true);
   }, []);
 
   // Function to clear AsyncStorage data
